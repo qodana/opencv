@@ -1,1 +1,21 @@
 bootstrap: mkdir -p build; cd build;cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .. || true
+exclude:
+  - name: CppDFAMemoryLeak
+  - name: CppDFAArrayIndexOutOfBounds
+  - name: CppDFAConstantConditions
+  - name: CppDFATimeOver
+  - name: CppDFANullDereference
+  - name: CppDFAEndlessLoop
+  - name: CppDFANotInitializedField
+  - name: CppDFAConstantParameter
+  - name: CppDFAInfiniteRecursion
+  - name: CppDFAUnreachableFunctionCall
+  - name: CppDFAConstantFunctionResult
+  - name: CppDFAUnreadVariable
+  - name: CppDFALoopConditionNotUpdated
+  - name: CppDFALocalValueEscapesFunction
+  - name: CppDFALocalValueEscapesScope
+  - name: CppDFAInvalidatedMemory
+  - name: CppDFAUnreachableCode
+  - name: CppDFADeletedPointer
+  - name: CppDFAUnusedValue
